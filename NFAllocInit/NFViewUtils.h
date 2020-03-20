@@ -14,7 +14,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NFViewUtils : NSObject
-#if TARGET_OS_TV
+#if !TARGET_OS_TV
 + (void)showAlertWithTitle:(nullable NSString *)title andMessage:(nullable NSString *)message;
 + (void)showAlertWithError:(NSError *)error;
 #endif

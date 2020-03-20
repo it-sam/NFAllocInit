@@ -18,7 +18,7 @@
 @implementation NFViewUtils
 
 #pragma mark - Alerts
-#if TARGET_OS_TV
+#if !TARGET_OS_TV
 + (void)showAlertWithTitle:(NSString *)title andMessage:(NSString *)message
 {
     dispatch_async(dispatch_get_main_queue(), ^{

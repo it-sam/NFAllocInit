@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
- #if TARGET_OS_TV
+ #if !TARGET_OS_TV
 @interface NFNetworkActivityIndicator : NSObject
 
 + (void)incrementActivityCount;

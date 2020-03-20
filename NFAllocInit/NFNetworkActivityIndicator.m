@@ -8,7 +8,7 @@
 //  Adopted from FCUtilities/FCNetworkActivityIndicator by Marco Arment
 //  https://github.com/marcoarment/FCUtilities/blob/master/FCUtilities/FCNetworkActivityIndicator.m
 //
-#if TARGET_OS_TV
+#if !TARGET_OS_TV
 #import "NFNetworkActivityIndicator.h"
 
 static int activityCount = 0;
