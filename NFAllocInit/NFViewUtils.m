@@ -18,7 +18,7 @@
 @implementation NFViewUtils
 
 #pragma mark - Alerts
-
+#if TARGET_OS_TV
 + (void)showAlertWithTitle:(NSString *)title andMessage:(NSString *)message
 {
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -35,7 +35,7 @@
 {
     [NFViewUtils showAlertWithTitle:@"An error occurred" andMessage:error.localizedDescription];
 }
-
+ #endif
 + (void)printAvailableFonts
 {
     NSArray *familyNames = [[NSArray alloc] initWithArray:[UIFont familyNames]];
