@@ -15,7 +15,11 @@ Pod::Spec.new do |s|
                                 'Shane Woolcock' => 'swoolcock@nextfaze.com',
                                 'Dan Silk' => 'dsilk@nextfaze.com' }
 
-  s.platform     			= :ios, "6.0"
+  s.ios.deployment_target = '6.0'
+  s.osx.deployment_target = '10.12'
+  s.tvos.deployment_target = '10.0'
+  s.watchos.deployment_target = '3.0'
+  
   s.source       			= { :git => "https://github.com/NextFaze/NFAllocInit.git", :tag => s.version.to_s }
   s.source_files 			= "NFAllocInit", "NFAllocInit/**/*.{h,m}"
   s.frameworks   			= "AVFoundation", "AudioToolbox"
